@@ -1,0 +1,237 @@
+@import './global.scss';
+
+/*--- Project Pages ---*/
+
+.project-page {
+  width: 100%;
+  h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  h2::after {
+    content: " ";
+    display: block;
+    width: 120px;
+    border-bottom: 3px solid $mainAccent;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .project-col {
+    // flex: 1;
+    width: 50%;
+    h3 {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 40px;
+      margin-top: 60px;
+    }
+  }
+
+  .project-row {
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-divider {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    height: 1px;
+    background-color: none;
+    border-top: 1px solid $lightAccent;
+    opacity: 0.5;
+  }
+
+  .project-box {
+    // margin: 20px;
+    overflow: hidden;
+    p {
+      font-size: 1.2rem;
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+    img {
+      transform: scale(1.025);
+      width: 100%;
+      transition: 0.7s;
+    }
+    .technology-list {
+      list-style: none;
+      font-size: 2rem;
+      color: #333;
+      letter-spacing: 1.4px;
+      display: block;
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      margin: 0 auto;
+      text-transform: uppercase;
+      .tech-icon {
+        font-size: 1.7rem;
+        color: $mainAccent;
+      }
+    }
+  }
+}
+
+.project-page-link {
+  color: $mainAccent;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/*--- RESPONSIVENESS (Project Page) ---*/
+
+@media (max-width: $breakpoint-laptop) {
+  .project-col {
+    width: 50%;
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .project-box {
+    // margin: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    height: auto;
+    h3 {
+      padding-top: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    img {
+      margin-top: 40px;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .project-page {
+    padding-bottom: 0 h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      margin-top: 60px;
+    }
+    .project-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .project-col {
+      //           flex: 1;
+      width: 100%;
+      h3 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+        margin-top: 60px;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+
+    .project-row {
+      width: 100%;
+      display: flex;
+      // justify-content: space-between;
+      // flex-direction: column-reverse;
+      flex-wrap: wrap;
+      .project-col {
+        margin-bottom: 40px;
+      }
+      .r-1 {
+        order: 1;
+      }
+      .r-2 {
+        order: 2;
+      }
+      .r-3 {
+        order: -1;
+      }
+      .r-4 {
+        order: 4;
+      }
+      .r-5 {
+        order: 5;
+      }
+      .r-6 {
+        order: 6;
+      }
+      .r-7 {
+        order: 7;
+      }
+      .r-8 {
+        order: 8;
+        margin-bottom: 0px;
+      }
+    }
+
+    .project-divider {
+      display: none;
+      width: 100%;
+      height: 6vh;
+      background-color: $darkBase;
+      border-top: 2px solid $lightAccent;
+      border-bottom: 2px solid $lightAccent;
+    }
+
+    .project-box {
+      // margin: 20px;
+      overflow: hidden;
+      margin-bottom: 0;
+      p {
+        font-size: 1.2rem;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+      img {
+        transform: scale(1.025);
+        width: 100%;
+        transition: 0.7s;
+        margin-top: 40px;
+      }
+      .technology-list {
+        font-size: 1.5rem;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        .tech-icon {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  .project-page-link {
+    color: $mainAccent;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+}
