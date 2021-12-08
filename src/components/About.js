@@ -1,5 +1,6 @@
 import React from "react";
 import me from "./me.jpg";
+import resume from './images/jaredloveridge2021.pdf';
 import "./components.scss";
 
 export default function About() {
@@ -21,7 +22,7 @@ export default function About() {
           </p>
           <a
             className="resume-btn"
-            href="https://jaredloveridge.netlify.app/images/jaredloveridge2021.pdf"
+            href={resume}
             download
           >
             resume
