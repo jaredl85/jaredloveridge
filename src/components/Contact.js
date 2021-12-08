@@ -33,15 +33,15 @@ export const Contact = () => {
           <label className="label" htmlFor="name" md={2}>
             Name
           </label>
-          <input className="input-field" type="text" name="name" />
+          <input className="input-field" type="text" name="name" required />
         </div>
         <div className="form-row">
           <label className="label">Email</label>
-          <input className="input-field" type="email" name="email" />
+          <input className="input-field" type="email" name="email" required />
         </div>
         <div className="form-row">
           <label className="label message-label">Message</label>
-          <textarea className="message-field" name="message" />
+          <textarea className="message-field" name="message" required />
         </div>
         <div className="submit-btn-row">
             <input className="submit-btn" type="submit" value="Send" />
