@@ -23,7 +23,7 @@ export default function About() {
           <a
             className="resume-btn"
             href={resume}
-            download
+            target="_blank"
           >
             resume
           </a>
