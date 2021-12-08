@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logo from './images/logo.png';
 import "./components.scss";
 
 export default function Nav() {
@@ -24,6 +25,7 @@ export default function Nav() {
 
   return (
     <div className="nav">
+    
       {(toggleMenu || screenWidth > 768) && (
         <ul className="list">
           <Link
