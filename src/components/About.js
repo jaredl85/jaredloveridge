@@ -21,7 +21,7 @@ export default function About() {
           </p>
           <a
             className="resume-btn"
-            href="https://jaredloveridge.netlify.app/images/jaredloveridge2021"
+            href="https://jaredloveridge.netlify.app/images/jaredloveridge2021.pdf"
             download
           >
             resume
