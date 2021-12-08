@@ -132,17 +132,15 @@ h4 {
         float: left;
         background-color: $darkBase;
         padding-top: 60px;
-        li {
+        .nav-item {
             border: 1px solid $mainColor;
             padding: 15px 0;
             width: 105%;
             text-align: center;
             transition: 0.5s;
-            li a {
                display: block;
                width: 100%;
             }
-        }
         li:hover {
             background-color: $mainColor;
             transition: 0.5s;
@@ -365,15 +363,19 @@ h4 {
     
     .about-text-box {
         width: 90%;
+        text-align: justify;
         padding-bottom: 80px;
         margin: 0 auto;
         position: relative;
         h3 {
             font-size: 1.5rem;
+            text-align: center;
+            margin: 40px 0 40px 0;
+            padding: 0;
         }
         strong p {
             font-size: 1.2rem;
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
         p {
             line-height: 1.7;
@@ -474,12 +476,17 @@ h4 {
 /*--- RESPONSIVENESS ---*/
 
 @media (max-width: $breakpoint-tablet) {
-    .icon-container {
-        .icon {
-            margin: 30px;
-        }
+.icon-container {
+    .icon-box {
+    }
+    .icon:hover {
+    }
+    .icon {
+        margin: 20px;
+        font-size: 3.5rem;
     }
 }
+    }
 
 /*------------*/
 /*--- WORK ---*/
@@ -685,8 +692,8 @@ h4 {
 
 @media (max-width: $breakpoint-tablet) {
     .contact {
-        padding-top: 1px;
-        padding-bottom: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
         background-color: $mainColor;
     }
     
@@ -709,6 +716,8 @@ h4 {
             margin-left: 0;
             font-size: 1.2rem;
         }
+        .message-label {
+        }
         .message-field {
             width: 80vw;
             margin-left: 0;
@@ -719,6 +728,9 @@ h4 {
             color: $mainAccent;
             margin-left: 15px;
         }
+        .submit-btn-row {
+            padding-left: 25px;
+        }
         .submit-btn {
             background-color: $mainColor;
             font-size: 1.2rem;
@@ -727,12 +739,11 @@ h4 {
             color: $lightAccent;
             border: 2px solid $lightAccent;
             padding: 10px 15px;
-            text-align: right;
             border-radius: 5px;
             text-transform: uppercase;
             transition: .5s;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0;
         }
         .submit-btn:hover {
             background-color: $darkBase;

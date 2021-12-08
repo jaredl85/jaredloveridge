@@ -14,16 +14,22 @@ export default function About() {
         <div className="about-text-box">
           <h3>Junior-Level Front-End Web Developer</h3>
           <p>
-            Hello! My name is Jared and I'm a recent coding bootcamp graduate with experience developing web applications in the MERN stack (Mongo, Express, React, and Node).
-            I'm currently seeking opportunities to expand and apply my skills.
+            Hello! My name is Jared and I'm a recent coding bootcamp graduate
+            with experience developing web applications in the MERN stack
+            (Mongo, Express, React, and Node). I'm currently seeking
+            opportunities to expand and apply my skills.
           </p>
-          <a className="resume-btn" href="#">
-            See my resume
+          <a
+            className="resume-btn"
+            href="https://jaredloveridge.netlify.app/images/jaredloveridge2021"
+            download
+          >
+            resume
           </a>
         </div>
       </div>
 
       <div className="row"></div>
-      </div>
+    </div>
   );
 }
