@@ -427,130 +427,24 @@ h4 {
 /*--- SKILLS ---*/
 //////////////////
 
-.skills {
-    list-style: none;
-    width: 70%;
-    margin: 0 auto;
-    li {
-    margin: 20px 0;
+.icon-container {
+    width: 100%;
+    background-color: $lightBase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .icon-box {
+        text-align: center;
     }
-    .bar {
-        background-color: #333;
-        display: block;
-        height: 10px;
-        border: 1px solid rgba(37, 89, 167, 0.3);
-        border-radius: 3px;
-        overflow: hidden;
-        box-shadow: 0 0 10px $mainColor;
+    .icon:hover {
+        color: $lightAccent;
+        transition: .5s;
     }
-    .bar span {
-        height: 10px;
-        float: left;
-        background: $lightBase;
-    }
-    .html {
-        width: 90%;
-        animation: html 12s;
-    }
-    .css {
-        width: 80%;
-        animation: css 12s;
-    }
-    .sass {
-        width: 65%;
-        animation: sass 12s;
-    }
-    .bootstrap {
-        width: 70%;
-        animation: bootstrap 12s;
-    }
-    .javascript {
-        width: 70%;
-        animation: javascript 12s;
-    }
-    .react {
-        width: 75%;
-        animation: react 12s;
-    }
-    .wordpress {
-        width: 60%;
-        animation: wordpress 12s;
-    }
-    .design {
-        width: 70%;
-        animation: design 12s;
-    }
-}
-
-@keyframes html {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes css {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes sass {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@keyframes bootstrap {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes javascript {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes react {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 75%;
-    }
-}
-
-@keyframes wordpress {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes design {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
+    .icon {
+        margin: 60px;
+        font-size: 4rem;
+        text-decoration: none;
+        color: $darkBase;
+        transition: .5s;
     }
 }
 
@@ -719,7 +613,12 @@ h4 {
 
 .contact-form {
     width: 100%;
+    margin-top: 60px;
     .form-row {
+        width: calc(35vw + 360px);
+        margin: 0 auto;
+    }
+    .submit-btn-row {
         width: calc(35vw + 360px);
         margin: 0 auto;
     }
@@ -776,7 +675,7 @@ h4 {
         text-transform: uppercase;
         transition: .5s;
         text-decoration: none;
-        margin: 0 10px;
+        margin: 0 0 0 202px;
     }
     .submit-btn:hover {
         background-color: $darkBase;

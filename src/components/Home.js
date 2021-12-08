@@ -3,8 +3,10 @@ import Nav from "./Nav.js";
 import SocialIcons from "./SocialIcons.js";
 import Splash from "./Splash";
 import About from './About';
+import Skills from './Skills';
 import Work from './Work';
 import Footer from "./Footer";
+import Contact from './Contact';
 import "./components.scss";
 
 export default function Home() {
@@ -12,9 +14,11 @@ export default function Home() {
     <div>
       <Nav />
       <Splash />
+      <Work />
+      <Skills />
       <About />
       <SocialIcons />
-      <Work />
+      <Contact />
       <Footer />
     </div>
   );
