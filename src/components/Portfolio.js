@@ -132,13 +132,13 @@ export default function Portfolio() {
             <div className="project-box">
               <h3>Outcome</h3>
               <p>
-                <Link to="/react-portfolio" className="project-page-link">
+                <Link to="/" className="project-page-link">
                   See the final project
                 </Link>
               </p>
               <p>
                 <a
-                  href="https://github.com/jaredl85/portfolio2"
+                  href="https://github.com/jaredl85/jaredloveridge"
                   target="_blank"
                   className="project-page-link project-page-github"
                 >

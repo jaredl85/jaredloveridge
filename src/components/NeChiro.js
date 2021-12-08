@@ -102,6 +102,7 @@ export default function NeChiro() {
                 <a
                   href="https://nechiro.netlify.app/"
                   className="project-page-link"
+                  target="_blank"
                 >
                   See the final project
                 </a>

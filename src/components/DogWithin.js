@@ -145,6 +145,7 @@ export default function DogWithin() {
                 <a
                   href="http://thedogwithin.com/"
                   className="project-page-link"
+                  target="_blank"
                 >
                   See the final project
                 </a>
