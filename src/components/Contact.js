@@ -10,7 +10,7 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "gmail",
+        "service_hmrf9qn",
         "template_ywkcgdl",
         form.current,
         "user_WUky3AspObOC2RTmTbBA3"
@@ -44,7 +44,7 @@ export const Contact = () => {
           <textarea className="message-field" name="message" />
         </div>
         <div className="submit-btn-row">
-          <input className="submit-btn" type="submit" value="Send" />
+            <input className="submit-btn" type="submit" value="Send" />
         </div>
       </form>
     </div>
