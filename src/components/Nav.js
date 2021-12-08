@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./components.scss";
 
@@ -25,18 +26,46 @@ export default function Nav() {
     <div className="nav">
       {(toggleMenu || screenWidth > 768) && (
         <ul className="list">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <Link
+            className="nav-item"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Home
+          </Link>
+          <Link
+            className="nav-item"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Work
+          </Link>
+          <Link
+            className="nav-item"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            About
+          </Link>
+          <Link
+            className="nav-item"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact
+          </Link>
         </ul>
       )}
 

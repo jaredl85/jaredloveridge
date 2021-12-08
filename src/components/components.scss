@@ -80,11 +80,9 @@ h4 {
         justify-content: center;
         align-items: center;
         position: relative;
-        li {
+        .nav-item {
             float: left;
             margin-left: 30px;
-        }
-        li a {
             text-decoration: none;
             color: #fff;
             text-transform: uppercase;
@@ -94,7 +92,7 @@ h4 {
             font-family: 'Lato', sans-serif;
             transition: 0.5s;
         }
-        li a:hover {
+        .nav-item:hover {
             color: $lightAccent;
             transition: 0.5s;
         }

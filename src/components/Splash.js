@@ -1,6 +1,7 @@
 import React from "react";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { Link } from "react-scroll";
 import "./components.scss";
 
 export default function Splash() {
@@ -25,9 +26,16 @@ export default function Splash() {
           I build websites with <br /> <span ref={textRef}></span>
         </h1>
         <br />
-        <a className="home-btn" href="#work">
+        <Link
+          className="home-btn"
+          to="work"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           See my work
-        </a>
+        </Link>
       </div>
     </div>
   );
