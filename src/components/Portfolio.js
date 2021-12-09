@@ -104,14 +104,7 @@ export default function Portfolio() {
                 had initially anticipated, as I ran into issues with hosting my
                 build files. However, after going through the process of
                 debugging my application, I managed to fix the errors that were
-                preventing my app from properly rendering (it wound up being an
-                issue with how I’d implemented my Routing, which I was able to
-                fix quickly once it had been identified).
-              </p>
-              <p>
-                However, this wasn’t time wasted - I learned a lot about
-                debugging, how JSON files are used, and how to Google more
-                effectively.
+                preventing my app from properly deploying. I don't regret running into these deployment issues; in the process, I learned a lot about how to debug my own code.
               </p>
             </div>
           </div>

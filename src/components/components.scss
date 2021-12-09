@@ -72,7 +72,7 @@ h4 {
   position: fixed;
   z-index: 1000;
   .logo {
-      height: 55px;
+    height: 55px;
   }
   .list {
     list-style: none;
@@ -453,6 +453,20 @@ h4 {
     text-decoration: none;
     color: $darkBase;
     transition: 0.5s;
+  }
+}
+
+/*--- RESPONSIVENESS: SKILLS ICONS ---*/
+@media (max-width: $breakpoint-tablet) {
+  .skill-icon-container {
+    .skill-icon-box {
+    }
+    .skill-icon:hover {
+    }
+    .skill-icon {
+      margin: 20px;
+      font-size: 3.5rem;
+    }
   }
 }
 
