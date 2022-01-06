@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import NEC from "./nec_splash.png";
 import PORT from "./portfolio_splash.png";
 import TWD from "./twd_splash.png";
-import NUCAMP from "./nucamp_splash.png";
+import BFA from './bfa_splash.png';
+import TCS from './tcs_splash.png';
 import "./components.scss";
 
 class Work extends Component {
@@ -15,17 +16,16 @@ class Work extends Component {
         <div className="project-wrapper">
           <div className="project-row">
             <div className="project-col">
-              <Link to="/nechiro">
+              <Link to="/bookfinderapp">
                 <div className="project-box">
-                  <img src={NEC} alt="northeast chiropractic" />
+                  <img src={BFA} alt="bookfinder app project" />
                 </div>
               </Link>
             </div>
-
             <div className="project-col">
-              <Link to="/portfolio">
+              <Link to="/codeschool">
                 <div className="project-box">
-                  <img src={PORT} alt="portfolio project" />
+                  <img src={TCS} alt="the code school" />
                 </div>
               </Link>
             </div>
@@ -33,13 +33,12 @@ class Work extends Component {
 
           <div className="project-row">
             <div className="project-col">
-              <Link to="/nucamp">
+              <Link to="/nechiro">
                 <div className="project-box">
-                  <img src={NUCAMP} alt="nucamp project" />
+                  <img src={NEC} alt="northeast chiropractic" />
                 </div>
               </Link>
             </div>
-
             <div className="project-col">
               <Link to="/dogwithin">
                 <div className="project-box">

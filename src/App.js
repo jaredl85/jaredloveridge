@@ -3,9 +3,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import NeChiro from "./components/NeChiro.js";
-import Portfolio from "./components/Portfolio.js";
+import CodeSchool from "./components/projects/CodeSchool";
 import DogWithin from "./components/DogWithin.js";
-import NuCamp from "./components/NuCamp.js";
+import BookFinder from './components/projects/BookFinder';
 import Error from "./components/Error";
 import ScrollToTop from './ScrollToTop';
 
@@ -24,11 +24,11 @@ function App() {
             <Route path="/dogwithin">
               <DogWithin />
             </Route>
-            <Route path="/nucamp">
-              <NuCamp />
+            <Route path="/bookfinderapp">
+              <BookFinder />
             </Route>
-            <Route path="/portfolio">
-              <Portfolio />
+            <Route path="/codeschool">
+              <CodeSchool />
             </Route>
             <Route path="*">
               <Error />
